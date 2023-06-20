@@ -16,6 +16,7 @@
 		EF1D09A82A414EA600DCDDDB /* WiFiQRCodeGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1D09A72A414EA600DCDDDB /* WiFiQRCodeGeneratorTests.swift */; };
 		EF1D09B22A414EA600DCDDDB /* WiFiQRCodeGeneratorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1D09B12A414EA600DCDDDB /* WiFiQRCodeGeneratorUITests.swift */; };
 		EF1D09B42A414EA600DCDDDB /* WiFiQRCodeGeneratorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1D09B32A414EA600DCDDDB /* WiFiQRCodeGeneratorUITestsLaunchTests.swift */; };
+		EF1D09C12A41539700DCDDDB /* BarcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1D09C02A41539700DCDDDB /* BarcodeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		EF1D09AD2A414EA600DCDDDB /* WiFiQRCodeGeneratorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WiFiQRCodeGeneratorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF1D09B12A414EA600DCDDDB /* WiFiQRCodeGeneratorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiQRCodeGeneratorUITests.swift; sourceTree = "<group>"; };
 		EF1D09B32A414EA600DCDDDB /* WiFiQRCodeGeneratorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiQRCodeGeneratorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EF1D09C02A41539700DCDDDB /* BarcodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +103,9 @@
 			children = (
 				EF1D09902A414EA500DCDDDB /* AppDelegate.swift */,
 				EF1D09922A414EA500DCDDDB /* SceneDelegate.swift */,
-				EF1D09942A414EA500DCDDDB /* ViewController.swift */,
 				EF1D09962A414EA500DCDDDB /* Main.storyboard */,
+				EF1D09942A414EA500DCDDDB /* ViewController.swift */,
+				EF1D09C02A41539700DCDDDB /* BarcodeViewController.swift */,
 				EF1D09992A414EA600DCDDDB /* Assets.xcassets */,
 				EF1D099B2A414EA600DCDDDB /* LaunchScreen.storyboard */,
 				EF1D099E2A414EA600DCDDDB /* Info.plist */,
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF1D09952A414EA500DCDDDB /* ViewController.swift in Sources */,
+				EF1D09C12A41539700DCDDDB /* BarcodeViewController.swift in Sources */,
 				EF1D09912A414EA500DCDDDB /* AppDelegate.swift in Sources */,
 				EF1D09932A414EA500DCDDDB /* SceneDelegate.swift in Sources */,
 			);
