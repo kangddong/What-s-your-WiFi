@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF1D09912A414EA500DCDDDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1D09902A414EA500DCDDDB /* AppDelegate.swift */; };
+		EF1D09932A414EA500DCDDDB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1D09922A414EA500DCDDDB /* SceneDelegate.swift */; };
+		EF1D09952A414EA500DCDDDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1D09942A414EA500DCDDDB /* ViewController.swift */; };
+		EF1D09982A414EA500DCDDDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF1D09962A414EA500DCDDDB /* Main.storyboard */; };
+		EF1D099A2A414EA600DCDDDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF1D09992A414EA600DCDDDB /* Assets.xcassets */; };
+		EF1D099D2A414EA600DCDDDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF1D099B2A414EA600DCDDDB /* LaunchScreen.storyboard */; };
+		EF1D09A82A414EA600DCDDDB /* WiFiQRCodeGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1D09A72A414EA600DCDDDB /* WiFiQRCodeGeneratorTests.swift */; };
+		EF1D09B22A414EA600DCDDDB /* WiFiQRCodeGeneratorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1D09B12A414EA600DCDDDB /* WiFiQRCodeGeneratorUITests.swift */; };
+		EF1D09B42A414EA600DCDDDB /* WiFiQRCodeGeneratorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1D09B32A414EA600DCDDDB /* WiFiQRCodeGeneratorUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF1D09A42A414EA600DCDDDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF1D09852A414EA400DCDDDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF1D098C2A414EA500DCDDDB;
+			remoteInfo = WiFiQRCodeGenerator;
+		};
+		EF1D09AE2A414EA600DCDDDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF1D09852A414EA400DCDDDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF1D098C2A414EA500DCDDDB;
+			remoteInfo = WiFiQRCodeGenerator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF1D098D2A414EA500DCDDDB /* WiFiQRCodeGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiFiQRCodeGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF1D09902A414EA500DCDDDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF1D09922A414EA500DCDDDB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EF1D09942A414EA500DCDDDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF1D09972A414EA500DCDDDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF1D09992A414EA600DCDDDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF1D099C2A414EA600DCDDDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF1D099E2A414EA600DCDDDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF1D09A32A414EA600DCDDDB /* WiFiQRCodeGeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WiFiQRCodeGeneratorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF1D09A72A414EA600DCDDDB /* WiFiQRCodeGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiQRCodeGeneratorTests.swift; sourceTree = "<group>"; };
+		EF1D09AD2A414EA600DCDDDB /* WiFiQRCodeGeneratorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WiFiQRCodeGeneratorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF1D09B12A414EA600DCDDDB /* WiFiQRCodeGeneratorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiQRCodeGeneratorUITests.swift; sourceTree = "<group>"; };
+		EF1D09B32A414EA600DCDDDB /* WiFiQRCodeGeneratorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiQRCodeGeneratorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF1D098A2A414EA500DCDDDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF1D09A02A414EA600DCDDDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF1D09AA2A414EA600DCDDDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF1D09842A414EA400DCDDDB = {
+			isa = PBXGroup;
+			children = (
+				EF1D098F2A414EA500DCDDDB /* WiFiQRCodeGenerator */,
+				EF1D09A62A414EA600DCDDDB /* WiFiQRCodeGeneratorTests */,
+				EF1D09B02A414EA600DCDDDB /* WiFiQRCodeGeneratorUITests */,
+				EF1D098E2A414EA500DCDDDB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF1D098E2A414EA500DCDDDB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF1D098D2A414EA500DCDDDB /* WiFiQRCodeGenerator.app */,
+				EF1D09A32A414EA600DCDDDB /* WiFiQRCodeGeneratorTests.xctest */,
+				EF1D09AD2A414EA600DCDDDB /* WiFiQRCodeGeneratorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF1D098F2A414EA500DCDDDB /* WiFiQRCodeGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				EF1D09902A414EA500DCDDDB /* AppDelegate.swift */,
+				EF1D09922A414EA500DCDDDB /* SceneDelegate.swift */,
+				EF1D09942A414EA500DCDDDB /* ViewController.swift */,
+				EF1D09962A414EA500DCDDDB /* Main.storyboard */,
+				EF1D09992A414EA600DCDDDB /* Assets.xcassets */,
+				EF1D099B2A414EA600DCDDDB /* LaunchScreen.storyboard */,
+				EF1D099E2A414EA600DCDDDB /* Info.plist */,
+			);
+			path = WiFiQRCodeGenerator;
+			sourceTree = "<group>";
+		};
+		EF1D09A62A414EA600DCDDDB /* WiFiQRCodeGeneratorTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF1D09A72A414EA600DCDDDB /* WiFiQRCodeGeneratorTests.swift */,
+			);
+			path = WiFiQRCodeGeneratorTests;
+			sourceTree = "<group>";
+		};
+		EF1D09B02A414EA600DCDDDB /* WiFiQRCodeGeneratorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EF1D09B12A414EA600DCDDDB /* WiFiQRCodeGeneratorUITests.swift */,
+				EF1D09B32A414EA600DCDDDB /* WiFiQRCodeGeneratorUITestsLaunchTests.swift */,
+			);
+			path = WiFiQRCodeGeneratorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF1D098C2A414EA500DCDDDB /* WiFiQRCodeGenerator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF1D09B72A414EA600DCDDDB /* Build configuration list for PBXNativeTarget "WiFiQRCodeGenerator" */;
+			buildPhases = (
+				EF1D09892A414EA500DCDDDB /* Sources */,
+				EF1D098A2A414EA500DCDDDB /* Frameworks */,
+				EF1D098B2A414EA500DCDDDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WiFiQRCodeGenerator;
+			productName = WiFiQRCodeGenerator;
+			productReference = EF1D098D2A414EA500DCDDDB /* WiFiQRCodeGenerator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF1D09A22A414EA600DCDDDB /* WiFiQRCodeGeneratorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF1D09BA2A414EA600DCDDDB /* Build configuration list for PBXNativeTarget "WiFiQRCodeGeneratorTests" */;
+			buildPhases = (
+				EF1D099F2A414EA600DCDDDB /* Sources */,
+				EF1D09A02A414EA600DCDDDB /* Frameworks */,
+				EF1D09A12A414EA600DCDDDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF1D09A52A414EA600DCDDDB /* PBXTargetDependency */,
+			);
+			name = WiFiQRCodeGeneratorTests;
+			productName = WiFiQRCodeGeneratorTests;
+			productReference = EF1D09A32A414EA600DCDDDB /* WiFiQRCodeGeneratorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EF1D09AC2A414EA600DCDDDB /* WiFiQRCodeGeneratorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF1D09BD2A414EA600DCDDDB /* Build configuration list for PBXNativeTarget "WiFiQRCodeGeneratorUITests" */;
+			buildPhases = (
+				EF1D09A92A414EA600DCDDDB /* Sources */,
+				EF1D09AA2A414EA600DCDDDB /* Frameworks */,
+				EF1D09AB2A414EA600DCDDDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF1D09AF2A414EA600DCDDDB /* PBXTargetDependency */,
+			);
+			name = WiFiQRCodeGeneratorUITests;
+			productName = WiFiQRCodeGeneratorUITests;
+			productReference = EF1D09AD2A414EA600DCDDDB /* WiFiQRCodeGeneratorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF1D09852A414EA400DCDDDB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					EF1D098C2A414EA500DCDDDB = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					EF1D09A22A414EA600DCDDDB = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = EF1D098C2A414EA500DCDDDB;
+					};
+					EF1D09AC2A414EA600DCDDDB = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = EF1D098C2A414EA500DCDDDB;
+					};
+				};
+			};
+			buildConfigurationList = EF1D09882A414EA500DCDDDB /* Build configuration list for PBXProject "WiFiQRCodeGenerator" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF1D09842A414EA400DCDDDB;
+			productRefGroup = EF1D098E2A414EA500DCDDDB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF1D098C2A414EA500DCDDDB /* WiFiQRCodeGenerator */,
+				EF1D09A22A414EA600DCDDDB /* WiFiQRCodeGeneratorTests */,
+				EF1D09AC2A414EA600DCDDDB /* WiFiQRCodeGeneratorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF1D098B2A414EA500DCDDDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF1D099D2A414EA600DCDDDB /* LaunchScreen.storyboard in Resources */,
+				EF1D099A2A414EA600DCDDDB /* Assets.xcassets in Resources */,
+				EF1D09982A414EA500DCDDDB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF1D09A12A414EA600DCDDDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF1D09AB2A414EA600DCDDDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF1D09892A414EA500DCDDDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF1D09952A414EA500DCDDDB /* ViewController.swift in Sources */,
+				EF1D09912A414EA500DCDDDB /* AppDelegate.swift in Sources */,
+				EF1D09932A414EA500DCDDDB /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF1D099F2A414EA600DCDDDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF1D09A82A414EA600DCDDDB /* WiFiQRCodeGeneratorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF1D09A92A414EA600DCDDDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF1D09B22A414EA600DCDDDB /* WiFiQRCodeGeneratorUITests.swift in Sources */,
+				EF1D09B42A414EA600DCDDDB /* WiFiQRCodeGeneratorUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF1D09A52A414EA600DCDDDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF1D098C2A414EA500DCDDDB /* WiFiQRCodeGenerator */;
+			targetProxy = EF1D09A42A414EA600DCDDDB /* PBXContainerItemProxy */;
+		};
+		EF1D09AF2A414EA600DCDDDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF1D098C2A414EA500DCDDDB /* WiFiQRCodeGenerator */;
+			targetProxy = EF1D09AE2A414EA600DCDDDB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF1D09962A414EA500DCDDDB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF1D09972A414EA500DCDDDB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF1D099B2A414EA600DCDDDB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF1D099C2A414EA600DCDDDB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF1D09B52A414EA600DCDDDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF1D09B62A414EA600DCDDDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF1D09B82A414EA600DCDDDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WiFiQRCodeGenerator/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = arex.WiFiQRCodeGenerator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF1D09B92A414EA600DCDDDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WiFiQRCodeGenerator/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = arex.WiFiQRCodeGenerator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EF1D09BB2A414EA600DCDDDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = arex.WiFiQRCodeGeneratorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WiFiQRCodeGenerator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WiFiQRCodeGenerator";
+			};
+			name = Debug;
+		};
+		EF1D09BC2A414EA600DCDDDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = arex.WiFiQRCodeGeneratorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WiFiQRCodeGenerator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WiFiQRCodeGenerator";
+			};
+			name = Release;
+		};
+		EF1D09BE2A414EA600DCDDDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = arex.WiFiQRCodeGeneratorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WiFiQRCodeGenerator;
+			};
+			name = Debug;
+		};
+		EF1D09BF2A414EA600DCDDDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = arex.WiFiQRCodeGeneratorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WiFiQRCodeGenerator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF1D09882A414EA500DCDDDB /* Build configuration list for PBXProject "WiFiQRCodeGenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF1D09B52A414EA600DCDDDB /* Debug */,
+				EF1D09B62A414EA600DCDDDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF1D09B72A414EA600DCDDDB /* Build configuration list for PBXNativeTarget "WiFiQRCodeGenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF1D09B82A414EA600DCDDDB /* Debug */,
+				EF1D09B92A414EA600DCDDDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF1D09BA2A414EA600DCDDDB /* Build configuration list for PBXNativeTarget "WiFiQRCodeGeneratorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF1D09BB2A414EA600DCDDDB /* Debug */,
+				EF1D09BC2A414EA600DCDDDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF1D09BD2A414EA600DCDDDB /* Build configuration list for PBXNativeTarget "WiFiQRCodeGeneratorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF1D09BE2A414EA600DCDDDB /* Debug */,
+				EF1D09BF2A414EA600DCDDDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF1D09852A414EA400DCDDDB /* Project object */;
+}
