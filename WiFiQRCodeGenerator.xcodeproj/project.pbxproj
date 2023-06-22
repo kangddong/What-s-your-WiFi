@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		361C742D2A42CA200084C985 /* SSID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361C742C2A42CA200084C985 /* SSID.swift */; };
+		36E1E92E2A44245B003C9D6E /* ColorAsset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36E1E92D2A44245B003C9D6E /* ColorAsset.xcassets */; };
 		EF1D09912A414EA500DCDDDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1D09902A414EA500DCDDDB /* AppDelegate.swift */; };
 		EF1D09932A414EA500DCDDDB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1D09922A414EA500DCDDDB /* SceneDelegate.swift */; };
 		EF1D09952A414EA500DCDDDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1D09942A414EA500DCDDDB /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		361C742B2A42AC0B0084C985 /* WiFiQRCodeGenerator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WiFiQRCodeGenerator.entitlements; sourceTree = "<group>"; };
 		361C742C2A42CA200084C985 /* SSID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSID.swift; sourceTree = "<group>"; };
+		36E1E92D2A44245B003C9D6E /* ColorAsset.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorAsset.xcassets; sourceTree = "<group>"; };
 		EF1D098D2A414EA500DCDDDB /* WiFiQRCodeGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiFiQRCodeGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF1D09902A414EA500DCDDDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF1D09922A414EA500DCDDDB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36E1E92C2A44233C003C9D6E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EF1D09992A414EA600DCDDDB /* Assets.xcassets */,
+				36E1E92D2A44245B003C9D6E /* ColorAsset.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		EF1D09842A414EA400DCDDDB = {
 			isa = PBXGroup;
 			children = (
@@ -111,7 +122,7 @@
 				EF1D09962A414EA500DCDDDB /* Main.storyboard */,
 				EF1D09942A414EA500DCDDDB /* ViewController.swift */,
 				EF1D09C02A41539700DCDDDB /* BarcodeViewController.swift */,
-				EF1D09992A414EA600DCDDDB /* Assets.xcassets */,
+				36E1E92C2A44233C003C9D6E /* Resources */,
 				EF1D099B2A414EA600DCDDDB /* LaunchScreen.storyboard */,
 				EF1D099E2A414EA600DCDDDB /* Info.plist */,
 			);
@@ -241,6 +252,7 @@
 			files = (
 				EF1D099D2A414EA600DCDDDB /* LaunchScreen.storyboard in Resources */,
 				EF1D099A2A414EA600DCDDDB /* Assets.xcassets in Resources */,
+				36E1E92E2A44245B003C9D6E /* ColorAsset.xcassets in Resources */,
 				EF1D09982A414EA500DCDDDB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,11 +460,12 @@
 				CODE_SIGN_ENTITLEMENTS = WiFiQRCodeGenerator/WiFiQRCodeGenerator.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = EXQV2S5M22;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WiFiQRCodeGenerator/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "비밀번호 뭐야?";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "위치 좀 쓸게요";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "WiFi의 SSID 및 정보를 얻기위해서는 위치정보 서비스 동의가 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -483,11 +496,12 @@
 				CODE_SIGN_ENTITLEMENTS = WiFiQRCodeGenerator/WiFiQRCodeGenerator.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = EXQV2S5M22;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WiFiQRCodeGenerator/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "비밀번호 뭐야?";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "위치 좀 쓸게요";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "WiFi의 SSID 및 정보를 얻기위해서는 위치정보 서비스 동의가 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
