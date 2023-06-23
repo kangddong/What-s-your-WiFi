@@ -11,13 +11,16 @@ import CoreImage.CIFilterBuiltins
 
 class BarcodeViewController: UIViewController {
 
+    @IBOutlet weak var shareButton: UIButton!
     @IBOutlet weak var closeButton: UIButton!
     @IBOutlet weak var barcodeImageView: UIImageView!
+    
     public var barcodeString: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        shareButton.addTarget(self, action: #selector(tappedShareButton), for: .touchUpInside)
         closeButton.addTarget(self, action: #selector(tappedCloseButton), for: .touchUpInside)
         barcodeImageView.image = generateQRCode(barcode: barcodeString)
         
@@ -25,6 +28,15 @@ class BarcodeViewController: UIViewController {
 }
 
 extension BarcodeViewController {
+    
+    @objc
+    private func tappedShareButton() {
+        
+        let textToShare = "QR 코드를 공유해서 WiFi 접속을 해보세요 !"
+        let imageToShare = barcodeImageView.image
+
+        shareViaAirDrop(text: textToShare, image: imageToShare, url: nil)
+    }
     
     @objc
     private func tappedCloseButton() {
@@ -36,7 +48,7 @@ extension BarcodeViewController {
         let data = barcode.data(using: String.Encoding.ascii)
         
         // CICode128BarcodeGenerator
-        //CIQRCodeGenerator
+        // CIQRCodeGenerator
         if let filter = CIFilter(name: "CIQRCodeGenerator") {
             filter.setValue(data, forKey: "inputMessage")
             let transform = CGAffineTransform(scaleX: 3, y: 3)
@@ -47,4 +59,29 @@ extension BarcodeViewController {
         }
         return nil
     }
+
+    private func shareViaAirDrop(text: String?, image: UIImage?, url: URL?) {
+        var itemsToShare: [Any] = []
+        
+        if let text = text {
+            itemsToShare.append(text)
+        }
+        
+        if let image = image {
+            itemsToShare.append(image)
+        }
+        
+        if let url = url {
+            itemsToShare.append(url)
+        }
+        
+        let activityViewController = UIActivityViewController(activityItems: itemsToShare, applicationActivities: nil)
+        
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            activityViewController.popoverPresentationController?.sourceView = UIApplication.shared.keyWindow?.rootViewController?.view
+        } else {
+            self.present(activityViewController, animated: true, completion: nil)
+        }
+    }
+
 }
