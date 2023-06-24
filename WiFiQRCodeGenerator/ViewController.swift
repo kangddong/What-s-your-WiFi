@@ -34,9 +34,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        wifiNameTextfield.text = "SK_WiFiGIGAE908_2.4G"
+        wifiNameTextfield.text = "Maru360_Guest"
         wifiEncryptTypeTextfield.text = "WPA"
-        wifiPWTextfield.text = "AYX29@0651"
+        wifiPWTextfield.text = "moveforward"
         qrGenerateButton.addTarget(self, action: #selector(tappedGeneratedButton), for: .touchUpInside)
         
         
@@ -96,8 +96,9 @@ extension ViewController {
         let ssid = wifiNameTextfield.text!
         let type = wifiEncryptTypeTextfield.text!
         let password = wifiPWTextfield.text!
+        let hidden = ""
         
-        return "WIFI:S:\(ssid);T:\(type);P:\(password)"
+        return "WIFI:S:\(ssid);T:\(type);P:\(password);H:\(hidden);;"
     }
     
     private func getWiFiSSID() -> String? {
