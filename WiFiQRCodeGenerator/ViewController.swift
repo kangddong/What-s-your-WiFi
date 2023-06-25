@@ -15,6 +15,7 @@ import UIKit
 import SystemConfiguration.CaptiveNetwork
 import NetworkExtension
 import CoreLocation
+import GoogleMobileAds
 
 class ViewController: UIViewController {
 
@@ -23,6 +24,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var wifiPWTextfield: UITextField!
     @IBOutlet weak var qrGenerateButton: UIButton!
     
+    var bannerView: GADBannerView!
     var locationManager = CLLocationManager()
     
     var currentNetworkInfos: Array<NetworkInfo>? {
@@ -51,6 +53,13 @@ class ViewController: UIViewController {
             locationManager.delegate = self
             locationManager.requestWhenInUseAuthorization()
         }
+        
+        bannerView = GADBannerView(adSize: GADAdSizeBanner)
+        addBannerViewToView(bannerView)
+        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+//        bannerView.adUnitID = "ca-app-pub-7469152743628808~9112565814"
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
     }
 }
 
@@ -140,5 +149,29 @@ extension ViewController: CLLocationManagerDelegate {
         if status == .authorizedWhenInUse {
             updateWiFi()
         }
+    }
+}
+
+extension ViewController {
+    
+    private func addBannerViewToView(_ bannerView: GADBannerView) {
+        bannerView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(bannerView)
+        view.addConstraints(
+            [NSLayoutConstraint(item: bannerView,
+                                attribute: .bottom,
+                                relatedBy: .equal,
+                                toItem: view.safeAreaLayoutGuide,
+                                attribute: .bottom,
+                                multiplier: 1,
+                                constant: 0),
+             NSLayoutConstraint(item: bannerView,
+                                attribute: .centerX,
+                                relatedBy: .equal,
+                                toItem: view,
+                                attribute: .centerX,
+                                multiplier: 1,
+                                constant: 0)
+            ])
     }
 }

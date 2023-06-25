@@ -19,6 +19,7 @@
 		EF1D09B22A414EA600DCDDDB /* WiFiQRCodeGeneratorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1D09B12A414EA600DCDDDB /* WiFiQRCodeGeneratorUITests.swift */; };
 		EF1D09B42A414EA600DCDDDB /* WiFiQRCodeGeneratorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1D09B32A414EA600DCDDDB /* WiFiQRCodeGeneratorUITestsLaunchTests.swift */; };
 		EF1D09C12A41539700DCDDDB /* BarcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1D09C02A41539700DCDDDB /* BarcodeViewController.swift */; };
+		EF8843632A484DC50044E177 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = EF8843622A484DC50044E177 /* GoogleMobileAds */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF8843632A484DC50044E177 /* GoogleMobileAds in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,6 +164,9 @@
 			dependencies = (
 			);
 			name = WiFiQRCodeGenerator;
+			packageProductDependencies = (
+				EF8843622A484DC50044E177 /* GoogleMobileAds */,
+			);
 			productName = WiFiQRCodeGenerator;
 			productReference = EF1D098D2A414EA500DCDDDB /* WiFiQRCodeGenerator.app */;
 			productType = "com.apple.product-type.application";
@@ -234,6 +239,9 @@
 				Base,
 			);
 			mainGroup = EF1D09842A414EA400DCDDDB;
+			packageReferences = (
+				EF8843612A484DC50044E177 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+			);
 			productRefGroup = EF1D098E2A414EA500DCDDDB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -477,6 +485,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.arex.WiFiQRCodeGenerator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -513,6 +522,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.arex.WiFiQRCodeGenerator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -636,6 +646,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EF8843612A484DC50044E177 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
+			requirement = {
+				kind = exactVersion;
+				version = 10.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EF8843622A484DC50044E177 /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EF8843612A484DC50044E177 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EF1D09852A414EA400DCDDDB /* Project object */;
 }
